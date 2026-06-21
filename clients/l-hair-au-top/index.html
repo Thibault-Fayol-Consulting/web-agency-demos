@@ -10,7 +10,7 @@
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
     --ink:#2a132c; --paper:#f9eef9; --paper2:#f1ddf2;
-    --plum:#9b4ea3; --plum-lite:#d9a6dd; --mute:#6e4f71;
+    --plum:#9b4ea3; --plum-lite:#d9a6dd; --mute:#6e4f71; --plum-d:#823f8a;
     --hero1:#52215a; --hero2:#34163a; --hero3:#1f0d23;
   }
   html{scroll-behavior:smooth}
@@ -21,7 +21,7 @@
   .wrap{max-width:66rem;margin:0 auto;padding-left:1.6rem;padding-right:1.6rem}
   .eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.04em;color:var(--mute)}
   .btn-plum{background:var(--plum);color:#fff;font-weight:600;padding:.95rem 2rem;border-radius:999px;font-size:.92rem;display:inline-block;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s}
-  .btn-plum:hover{background:#823f8a;transform:translateY(-2px)}
+  .btn-plum:hover{background:var(--plum-d);transform:translateY(-2px)}
   .btn-ghost{border:1px solid rgba(255,255,255,.4);color:#f3e2f3;font-weight:500;padding:.95rem 1.7rem;border-radius:999px;font-size:.92rem;display:inline-block}
   .reveal{opacity:0;transform:translateY(18px);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
   @keyframes rise{to{opacity:1;transform:none}}
@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="hero-art reveal" style="position:relative;height:31rem;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);animation-delay:.22s">
-      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80&auto=format&fit=crop" alt="L'Hair Au Top — coiffure" style="width:100%;height:100%;object-fit:cover" loading="eager" width="900" height="1200">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80&auto=format&fit=crop" alt="L'Hair Au Top — coiffure" style="width:100%;height:100%;object-fit:cover" loading="eager" fetchpriority="high" width="900" height="1200">
     </div>
   </div>
 </section>
@@ -97,11 +97,11 @@
       <a href="tel:0640435157" class="cg" style="color:var(--plum);font-weight:600;font-size:1.05rem;border-bottom:1px solid var(--plum);padding-bottom:.1rem;white-space:nowrap">Prendre rendez-vous →</a>
     </div>
     <div class="gal">
-      <a href="tel:0640435157" class="g-tall g-wide" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=900&q=80&auto=format&fit=crop" alt="Coupe femme" loading="lazy"></a>
-      <a href="tel:0640435157" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=500&q=80&auto=format&fit=crop" alt="Couleur et balayage" loading="lazy"></a>
-      <a href="tel:0640435157" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&q=80&auto=format&fit=crop" alt="Coupe homme" loading="lazy"></a>
-      <a href="tel:0640435157" class="g-wide" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=900&q=80&auto=format&fit=crop" alt="Brushing et coiffage" loading="lazy"></a>
-      <a href="tel:0640435157" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&q=80&auto=format&fit=crop" alt="Soin et brillance" loading="lazy"></a>
+      <a href="tel:0640435157" class="g-tall g-wide" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=900&q=80&auto=format&fit=crop" alt="Coupe femme" loading="lazy" decoding="async"></a>
+      <a href="tel:0640435157" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=500&q=80&auto=format&fit=crop" alt="Couleur et balayage" loading="lazy" decoding="async"></a>
+      <a href="tel:0640435157" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&q=80&auto=format&fit=crop" alt="Coupe homme" loading="lazy" decoding="async"></a>
+      <a href="tel:0640435157" class="g-wide" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=900&q=80&auto=format&fit=crop" alt="Brushing et coiffage" loading="lazy" decoding="async"></a>
+      <a href="tel:0640435157" aria-label="Appeler le salon"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&q=80&auto=format&fit=crop" alt="Soin et brillance" loading="lazy" decoding="async"></a>
     </div>
   </div>
 </section>
@@ -111,7 +111,7 @@
     <div class="carte-aside" style="position:sticky;top:5rem">
       <p class="eyebrow" style="margin-bottom:.7rem">Nos prestations</p>
       <h2 class="cg" style="font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.05;margin-bottom:1.2rem">Un geste précis, un résultat qui vous ressemble</h2>
-      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=700&q=80&auto=format&fit=crop" alt="Espace du salon" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=700&q=80&auto=format&fit=crop" alt="Espace du salon" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px" loading="lazy" decoding="async">
     </div>
     <div>
       <div style="padding:1.1rem 0;border-top:1px solid rgba(122,82,36,.18)"><p class="cg" style="font-weight:600;font-size:1.3rem">Coupe & coiffage</p><p style="color:var(--mute);font-size:.92rem;margin-top:.15rem">Diagnostic, coupe sur-mesure, brushing. Femme, homme, enfant.</p></div>
@@ -123,7 +123,7 @@
 </section>
 
 <section style="position:relative;color:#fff">
-  <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?w=1400&q=80&auto=format&fit=crop" alt="Ambiance du salon" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy">
+  <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?w=1400&q=80&auto=format&fit=crop" alt="Ambiance du salon" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async">
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,13,35,.92) 0%,rgba(31,13,35,.6) 100%)"></div>
   <div class="wrap" style="position:relative;padding-top:5rem;padding-bottom:5rem;max-width:44rem">
     <blockquote class="cg" style="font-size:clamp(1.5rem,3.8vw,2.2rem);font-weight:400;font-style:italic;line-height:1.35;margin-bottom:1.2rem">« Élise écoute vraiment. Je ressors à chaque fois avec exactement ce que je voulais — et un brushing qui tient. »</blockquote>
