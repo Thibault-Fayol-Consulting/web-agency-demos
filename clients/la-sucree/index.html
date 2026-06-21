@@ -37,10 +37,19 @@
     .hero-grid{grid-template-columns:1fr;gap:2rem}
     .hero-art{order:-1;aspect-ratio:4/3!important;height:auto!important}
     .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:9rem}
+    .gal .g-tall{grid-row:auto}
+    .gal .g-wide{grid-column:span 2}
     .info-grid{grid-template-columns:1fr!important;gap:1.5rem!important}
     .carte-grid{grid-template-columns:1fr!important;gap:2rem!important}
     .carte-aside{position:static!important}
     .mob-hide{display:none!important}
+    section .wrap{padding-top:2.6rem!important;padding-bottom:2.6rem!important}
+    section[id]{padding-top:0!important;padding-bottom:0!important}
+    section h1.fr{font-size:2.1rem!important;line-height:1.05!important}
+    section .wrap[style*="flex-wrap"]{justify-content:center!important}
+    header .wrap a[href^="tel:"]{padding:.85rem 1rem!important}
+    .eyebrow{font-size:.82rem!important}
+    footer .wrap{flex-direction:column!important;align-items:flex-start!important}
   }
 </style>
 <script type="application/ld+json">{
