@@ -1,145 +1,190 @@
 <!DOCTYPE html><html lang="fr"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boulangerie Pâtisserie Trouche — Boulangerie à Montpellier</title>
-<meta name="description" content="Boulangerie Pâtisserie Trouche, boulangerie artisanale à Montpellier. Pain au levain, viennoiseries maison. Ouvert dès 6h30..">
+<title>Boulangerie Pâtisserie Trouche — Boulangerie artisanale à Montpellier</title>
+<meta name="description" content="Boulangerie Pâtisserie Trouche, boulangerie artisanale à Montpellier. Pain au levain, viennoiseries maison, cuit chaque matin. Ouvert dès 6h30.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  :root{--a:#9a6313;--b:#2a1500}
-  body{font-family:'DM Sans',sans-serif;background:#fdf8f0;color:#1a1209;-webkit-font-smoothing:antialiased}
-  .lb{font-family:'Libre Baskerville',serif}
+  :root{
+    --ink:#241404; --paper:#fdf5e8; --paper2:#f7ead3;
+    --gold:#9a6313; --gold-lite:#e3b35a; --warm:#7a5224;
+    --hero1:#4d2b0c; --hero2:#2c1705; --hero3:#1c0f04;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}
+  .fr{font-family:'Fraunces',serif}
   a{color:inherit;text-decoration:none}
-  @media(max-width:640px){.prod-grid{grid-template-columns:1fr!important}.info-grid{grid-template-columns:1fr!important}.mob-hide{display:none!important}.hero-pad{padding:3.5rem 1.1rem 3rem!important}}
+  .wrap{max-width:64rem;margin:0 auto;padding-left:1.6rem;padding-right:1.6rem}
+  .eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.02em;color:var(--warm)}
+  .btn-gold{background:var(--gold);color:#fff;font-weight:600;padding:.95rem 1.9rem;border-radius:2px;font-size:.95rem;display:inline-block;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s}
+  .btn-gold:hover{background:#7d4f0e;transform:translateY(-2px)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.35);color:#f4e6cf;font-weight:500;padding:.95rem 1.6rem;border-radius:2px;font-size:.95rem;display:inline-block;transition:border-color .25s,color .25s}
+  .btn-ghost:hover{border-color:var(--gold-lite);color:#fff}
+  .rule{height:1px;background:linear-gradient(90deg,var(--gold) 0%,transparent 70%);border:0}
+  .reveal{opacity:0;transform:translateY(18px);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media(max-width:680px){
+    .carte-row{grid-template-columns:1fr!important}
+    .info-grid{grid-template-columns:1fr!important;gap:1.6rem!important}
+    .mob-hide{display:none!important}
+    .h1{font-size:clamp(3.4rem,18vw,5rem)!important}
+  }
 </style>
 <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "Bakery",
-  "name": "Boulangerie Pâtisserie Trouche",
-  "telephone": "04 67 92 05 05",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Rue du Faubourg Figuerolles, 34070 Montpellier",
-    "addressLocality": "Montpellier",
-    "addressCountry": "FR"
-  },
-  "url": "",
-  "openingHours": "Mar-Dim 6h30-13h30 et 16h-19h30"
+  "@context":"https://schema.org","@type":"Bakery","name":"Boulangerie Pâtisserie Trouche",
+  "telephone":"04 67 92 05 05",
+  "address":{"@type":"PostalAddress","streetAddress":"Rue du Faubourg Figuerolles, 34070 Montpellier","addressLocality":"Montpellier","addressCountry":"FR"},
+  "openingHours":"Mar-Dim 6h30-13h30 et 16h-19h30","servesCuisine":"Boulangerie, Viennoiserie, Pâtisserie"
 }</script>
 </head><body>
-<header style="background:var(--b);position:sticky;top:0;z-index:50">
-  <div style="max-width:60rem;margin:0 auto;padding:.7rem 1.5rem;display:flex;justify-content:space-between;align-items:center">
-    <div style="display:flex;align-items:center;gap:1.75rem">
-      <span class="lb" style="color:#fff;font-weight:700;font-size:.9rem">Boulangerie Pâtisserie Trouche</span>
-      <a href="services.html" class="mob-hide" style="color:rgba(255,232,190,.82);font-size:.8rem">Notre carte</a>
-      <a href="contact.html" class="mob-hide" style="color:rgba(255,232,190,.82);font-size:.8rem">Commande</a>
-    </div>
-    <a href="tel:0467920505" style="color:#ffe8be;font-weight:600;font-size:.82rem;display:flex;align-items:center;gap:.35rem"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="flex-shrink:0"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> 04 67 92 05 05</a>
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(28,15,4,.92);backdrop-filter:blur(10px)">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;padding-top:.85rem;padding-bottom:.85rem">
+    <span class="fr" style="color:#fff;font-weight:600;font-size:1.05rem;letter-spacing:-.01em">Boulangerie Pâtisserie Trouche</span>
+    <nav style="display:flex;align-items:center;gap:1.6rem">
+      <a href="#carte" class="mob-hide" style="color:#e8d6b8;font-size:.84rem;font-weight:500">La carte</a>
+      <a href="#venir" class="mob-hide" style="color:#e8d6b8;font-size:.84rem;font-weight:500">Nous trouver</a>
+      <a href="tel:0467920505" style="color:var(--gold-lite);font-weight:600;font-size:.86rem;border:1px solid rgba(227,179,90,.4);padding:.4rem .9rem;border-radius:2px">04 67 92 05 05</a>
+    </nav>
   </div>
 </header>
-<section style="position:relative;min-height:68vh;display:flex;align-items:center;background:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1400&q=80&auto=format&fit=crop') center/cover no-repeat">
-  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,11,2,.86) 0%,rgba(22,11,2,.66) 55%,rgba(22,11,2,.5) 100%)"></div>
-  <div class="hero-pad" style="position:relative;z-index:1;padding:4rem 1.5rem 3.5rem;max-width:60rem;margin:0 auto;width:100%">
-    <p style="color:#f4d9a6;font-size:.8rem;font-weight:500;margin-bottom:.9rem">Montpellier &middot; Artisan boulanger</p>
-    <h1 class="lb" style="color:#fff;font-weight:700;font-size:clamp(2.1rem,5.5vw,3.6rem);line-height:1.08;margin-bottom:1rem;text-shadow:0 2px 12px rgba(0,0,0,.4)">Boulangerie Pâtisserie Trouche</h1>
-    <p style="color:#f3ead9;font-size:1.05rem;font-style:italic;max-width:32rem;margin-bottom:1.8rem">Pain au levain, viennoiseries maison. Ouvert dès 6h30.</p>
-    <div style="display:inline-flex;align-items:center;gap:.6rem;background:rgba(0,0,0,.32);border:1px solid rgba(255,214,150,.45);border-radius:6px;padding:.7rem 1.1rem;margin-bottom:1.8rem">
-      <span style="width:8px;height:8px;border-radius:50%;background:#5fce6b;flex-shrink:0"></span>
-      <p style="color:#ffeccd;font-size:.95rem;font-weight:500">Ouvert &middot; Mar-Dim 6h30-13h30 et 16h-19h30</p>
+
+<!-- HERO : zéro photo, dégradé chaud + typo -->
+<section style="position:relative;background:radial-gradient(135% 120% at 8% 0%,var(--hero1) 0%,var(--hero2) 52%,var(--hero3) 100%);overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;right:-6%;top:-10%;font-family:'Fraunces',serif;font-size:42rem;line-height:1;color:rgba(227,179,90,.05);font-weight:900;user-select:none;pointer-events:none">✱</div>
+  <div class="wrap" style="position:relative;padding-top:5.5rem;padding-bottom:5rem">
+    <p class="eyebrow reveal" style="color:var(--gold-lite);margin-bottom:1.4rem;animation-delay:.05s">Montpellier — Artisan boulanger</p>
+    <h1 class="fr h1 reveal" style="color:#fff;font-weight:900;font-size:clamp(3.4rem,11vw,6.6rem);line-height:.94;letter-spacing:-.03em;margin-bottom:1.4rem;animation-delay:.12s">Boulangerie Pâtisserie Trouche</h1>
+    <p class="fr reveal" style="color:#f3e3c6;font-size:clamp(1.15rem,2.6vw,1.55rem);font-style:italic;max-width:34rem;line-height:1.35;margin-bottom:2.3rem;animation-delay:.2s">Pain au levain et viennoiseries, pétris et cuits chaque matin. Ouvert dès 6h30.</p>
+    <div class="reveal" style="display:inline-flex;align-items:center;gap:.6rem;background:rgba(0,0,0,.28);border:1px solid rgba(227,179,90,.32);padding:.6rem 1.1rem;border-radius:2px;margin-bottom:2.4rem;animation-delay:.28s">
+      <span style="width:7px;height:7px;border-radius:50%;background:#74d17f;box-shadow:0 0 0 4px rgba(116,209,127,.18)"></span>
+      <span style="color:#f3e3c6;font-size:.9rem;font-weight:500">Ouvert &middot; Mar-Dim 6h30-13h30 et 16h-19h30</span>
     </div>
-    <div style="display:flex;gap:.7rem;flex-wrap:wrap">
-      <a href="services.html" class="lb" style="background:var(--a);color:#fff;font-weight:700;padding:.9rem 1.8rem;border-radius:6px;font-size:.95rem">Voir nos pâtisseries</a>
-      <a href="tel:0467920505" style="background:rgba(255,255,255,.95);color:#2a1500;font-weight:600;padding:.9rem 1.5rem;border-radius:6px;font-size:.95rem">Appeler &middot; 04 67 92 05 05</a>
+    <div class="reveal" style="display:flex;gap:.8rem;flex-wrap:wrap;animation-delay:.36s">
+      <a href="#carte" class="btn-gold">Voir la carte</a>
+      <a href="tel:0467920505" class="btn-ghost">Appeler &middot; 04 67 92 05 05</a>
     </div>
   </div>
 </section>
-<section style="background:var(--b);padding:1rem 1.5rem">
-  <div style="max-width:60rem;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem 2.5rem;color:#f4d9a6;font-size:.82rem;font-weight:500">
-    <span>🌾 Levain naturel</span>
-    <span>👐 Fait maison chaque matin</span>
-    <span>📍 Retrait en boutique</span>
-    <span>⭐ Avis 5/5 Google</span>
+
+<!-- BANDEAU réassurance typographique -->
+<section style="background:var(--ink);color:#f0dcb8">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;padding-top:1.05rem;padding-bottom:1.05rem;font-size:.85rem;font-weight:500">
+    <span>Levain naturel</span><span style="opacity:.3">·</span>
+    <span>Cuit ce matin</span><span style="opacity:.3">·</span>
+    <span>Farine de la région</span><span style="opacity:.3">·</span>
+    <span>Avis Google 5/5</span>
   </div>
 </section>
-<section style="padding:3rem 1.5rem;background:#fff">
-  <div style="max-width:60rem;margin:0 auto">
-    <p style="color:#6b6b6b;font-size:.62rem;margin-bottom:1rem">Nos incontournables</p>
-    <h2 class="lb" style="font-size:1.8rem;font-weight:700;color:#1a1209;margin-bottom:2rem">Ce qu'on prépare chaque matin</h2>
-    <div class="prod-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem">
+
+<!-- CE MATIN : éditorial, pas de cartes-photos -->
+<section style="padding-top:5rem;padding-bottom:4rem">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.8rem">Ce qu'on prépare chaque matin</p>
+    <h2 class="fr" style="font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:600;letter-spacing:-.02em;max-width:24ch;margin-bottom:3rem;line-height:1.1">Trois métiers, une exigence : le goût du fait-maison.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.5rem 3rem">
       <div>
-        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80&auto=format&fit=crop" alt="Pain artisanal" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:.75rem">
-        <p class="lb" style="font-weight:700;font-size:.95rem;color:#1a1209;margin-bottom:.2rem">Pains artisanaux</p>
-        <p style="color:#6b6b6b;font-size:.82rem">Baguette tradition, pain au levain, pains spéciaux</p>
+        <p class="fr" style="font-size:1.25rem;font-weight:600;margin-bottom:.45rem">Les pains</p>
+        <p style="color:var(--warm);font-size:.95rem;line-height:1.6">Baguette tradition, levain naturel, pains spéciaux aux graines. Croûte épaisse, mie alvéolée.</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80&auto=format&fit=crop" alt="Viennoiseries" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:.75rem">
-        <p class="lb" style="font-weight:700;font-size:.95rem;color:#1a1209;margin-bottom:.2rem">Viennoiseries</p>
-        <p style="color:#6b6b6b;font-size:.82rem">Croissants, pains au chocolat, brioches dorées</p>
+        <p class="fr" style="font-size:1.25rem;font-weight:600;margin-bottom:.45rem">Les viennoiseries</p>
+        <p style="color:var(--warm);font-size:.95rem;line-height:1.6">Croissants pur beurre, pains au chocolat, brioches dorées. Feuilletage maison, tourné à la main.</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80&auto=format&fit=crop" alt="Pâtisseries" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:.75rem">
-        <p class="lb" style="font-weight:700;font-size:.95rem;color:#1a1209;margin-bottom:.2rem">Pâtisseries</p>
-        <p style="color:#6b6b6b;font-size:.82rem">Tartes, éclairs, choux, gâteaux maison</p>
+        <p class="fr" style="font-size:1.25rem;font-weight:600;margin-bottom:.45rem">Les pâtisseries</p>
+        <p style="color:var(--warm);font-size:.95rem;line-height:1.6">Tartes de saison, éclairs, flans vanille. Des classiques soignés, sans esbroufe.</p>
       </div>
     </div>
   </div>
 </section>
-<section style="padding:3.5rem 1.5rem;background:#fdf8f0">
-  <div style="max-width:44rem;margin:0 auto">
-    <p style="color:#6b6b6b;font-size:.62rem;margin-bottom:.5rem">Notre carte</p>
-    <h2 class="lb" style="font-size:1.9rem;font-weight:700;color:#1a1209;margin-bottom:2.5rem">Tout ce qu'on fait</h2>
-  <div style="padding:1.2rem 0;border-top:1px solid #ece6dc">
-    <p class="lb" style="font-weight:700;font-size:1rem;color:#1a1209;margin-bottom:.2rem">Pain artisanal</p>
-    <p style="color:#6b6b6b;font-size:.85rem;line-height:1.5">Baguettes, pains spéciaux, au levain naturel</p>
-  </div>
-  <div style="padding:1.2rem 0;border-top:1px solid #ece6dc">
-    <p class="lb" style="font-weight:700;font-size:1rem;color:#1a1209;margin-bottom:.2rem">Viennoiseries</p>
-    <p style="color:#6b6b6b;font-size:.85rem;line-height:1.5">Croissants, pains au chocolat, brioches</p>
-  </div>
-  <div style="padding:1.2rem 0;border-top:1px solid #ece6dc">
-    <p class="lb" style="font-weight:700;font-size:1rem;color:#1a1209;margin-bottom:.2rem">Pâtisseries</p>
-    <p style="color:#6b6b6b;font-size:.85rem;line-height:1.5">Gâteaux, tartes, éclairs maison</p>
-  </div>
-  <div style="padding:1.2rem 0;border-top:1px solid #ece6dc">
-    <p class="lb" style="font-weight:700;font-size:1rem;color:#1a1209;margin-bottom:.2rem">Traiteur</p>
-    <p style="color:#6b6b6b;font-size:.85rem;line-height:1.5">Sandwichs, quiches, salades fraîches</p>
-  </div>
-  <div style="padding:1.2rem 0;border-top:1px solid #ece6dc">
-    <p class="lb" style="font-weight:700;font-size:1rem;color:#1a1209;margin-bottom:.2rem">Commandes spéciales</p>
-    <p style="color:#6b6b6b;font-size:.85rem;line-height:1.5">Gâteaux d'anniversaire, pièces montées</p>
-  </div>
-    <a href="services.html" class="lb" style="display:inline-block;margin-top:1.5rem;color:var(--a);font-size:.82rem;font-weight:700;border-bottom:1px solid var(--a);padding-bottom:.1rem">Voir toute la carte</a>
-  </div>
-</section>
-<section style="padding:3rem 1.5rem;background:#fff">
-  <div style="max-width:60rem;margin:0 auto">
-    <p style="color:#6b6b6b;font-size:.62rem;margin-bottom:2rem">Ils en parlent</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
-      <blockquote style="border-left:2px solid var(--a);padding-left:1.1rem">
-        <p class="lb" style="font-size:.95rem;font-style:italic;color:#333;line-height:1.65">« Pain au levain exceptionnel, croissants comme à Paris. Une adresse incontournable de Montpellier. »</p>
-        <p style="color:#6b6b6b;font-size:.75rem;margin-top:.5rem">Sophie R. &middot; Montpellier &middot; ★★★★★ Google</p>
-      </blockquote>
-      <blockquote style="border-left:2px solid var(--a);padding-left:1.1rem">
-        <p class="lb" style="font-size:.95rem;font-style:italic;color:#333;line-height:1.65">« Pâtisseries sublimes. La tarte aux fraises est un chef-d'oeuvre. Accueil chaleureux à chaque visite. »</p>
-        <p style="color:#6b6b6b;font-size:.75rem;margin-top:.5rem">Marc D. &middot; Montpellier &middot; ★★★★★ Google</p>
-      </blockquote>
+
+<!-- LA CARTE : liste éditoriale, dividers, pas de photo -->
+<section id="carte" style="background:var(--paper2);padding-top:4.5rem;padding-bottom:4.5rem">
+  <div class="wrap" style="max-width:48rem">
+    <p class="eyebrow" style="margin-bottom:.8rem">La carte</p>
+    <h2 class="fr" style="font-size:clamp(2rem,5vw,3rem);font-weight:600;letter-spacing:-.02em;margin-bottom:2.5rem">Tout ce qu'on fait, chaque jour</h2>
+    <div class="carte-row" style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem">
+      <div>
+        <div style="padding:1.05rem 0;border-top:1px solid rgba(122,82,36,.22)">
+          <p class="fr" style="font-weight:600;font-size:1.08rem">Pain au levain</p>
+          <p style="color:var(--warm);font-size:.88rem;margin-top:.15rem">Le pain de la maison, longue fermentation</p>
+        </div>
+        <div style="padding:1.05rem 0;border-top:1px solid rgba(122,82,36,.22)">
+          <p class="fr" style="font-weight:600;font-size:1.08rem">Baguette tradition</p>
+          <p style="color:var(--warm);font-size:.88rem;margin-top:.15rem">Façonnée et cuite sur place</p>
+        </div>
+        <div style="padding:1.05rem 0;border-top:1px solid rgba(122,82,36,.22)">
+          <p class="fr" style="font-weight:600;font-size:1.08rem">Viennoiseries pur beurre</p>
+          <p style="color:var(--warm);font-size:.88rem;margin-top:.15rem">Croissants, pains au chocolat, chaussons</p>
+        </div>
+      </div>
+      <div>
+        <div style="padding:1.05rem 0;border-top:1px solid rgba(122,82,36,.22)">
+          <p class="fr" style="font-weight:600;font-size:1.08rem">Pâtisseries maison</p>
+          <p style="color:var(--warm);font-size:.88rem;margin-top:.15rem">Tartes, éclairs, flans de saison</p>
+        </div>
+        <div style="padding:1.05rem 0;border-top:1px solid rgba(122,82,36,.22)">
+          <p class="fr" style="font-weight:600;font-size:1.08rem">Snacking du midi</p>
+          <p style="color:var(--warm);font-size:.88rem;margin-top:.15rem">Sandwichs, quiches, parts salées</p>
+        </div>
+        <div style="padding:1.05rem 0;border-top:1px solid rgba(122,82,36,.22)">
+          <p class="fr" style="font-weight:600;font-size:1.08rem">Commandes spéciales</p>
+          <p style="color:var(--warm);font-size:.88rem;margin-top:.15rem">Gâteaux, pièces montées, sur réservation</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section style="padding:2.5rem 1.5rem;background:#fdf8f0">
-  <div class="info-grid" style="max-width:60rem;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem">
-    <div><p style="color:#6b6b6b;font-size:.6rem;margin-bottom:.5rem">Adresse</p><p style="color:#666;font-size:.875rem;line-height:1.65">Rue du Faubourg Figuerolles, 34070 Montpellier</p></div>
-    <div><p style="color:#6b6b6b;font-size:.6rem;margin-bottom:.5rem">Horaires</p><p style="color:#666;font-size:.875rem;line-height:1.65">Mar-Dim 6h30-13h30 et 16h-19h30</p></div>
-    <div><p style="color:#6b6b6b;font-size:.6rem;margin-bottom:.5rem">Téléphone</p><a href="tel:0467920505" class="lb" style="color:var(--a);font-weight:700;font-size:1.3rem;display:block">04 67 92 05 05</a></div>
+
+<!-- AVIS : typographique, éditorial -->
+<section style="padding-top:5rem;padding-bottom:5rem">
+  <div class="wrap" style="max-width:42rem">
+    <hr class="rule" style="margin-bottom:2.5rem">
+    <blockquote class="fr" style="font-size:clamp(1.4rem,3.5vw,2rem);font-weight:500;font-style:italic;line-height:1.4;letter-spacing:-.01em;margin-bottom:1.2rem">« Le meilleur pain au levain du quartier. On vient de loin pour les croissants du dimanche. »</blockquote>
+    <p style="color:var(--warm);font-size:.9rem">Sophie R. &middot; cliente depuis 6 ans &middot; ★★★★★ Google</p>
   </div>
 </section>
-<section style="padding:0;background:#fff">
-  <iframe title="Plan Boulangerie Pâtisserie Trouche" src="https://maps.google.com/maps?q=Rue du Faubourg Figuerolles, 34070 Montpellier&z=15&output=embed" style="width:100%;height:340px;border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- VENIR : horaires en avant + adresse + tel -->
+<section id="venir" style="background:var(--ink);color:var(--paper)">
+  <div class="wrap info-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2.5rem;padding-top:3.5rem;padding-bottom:3.5rem">
+    <div>
+      <p class="eyebrow" style="color:var(--gold-lite);margin-bottom:.7rem">Horaires</p>
+      <p class="fr" style="font-size:1.35rem;font-weight:600;line-height:1.3">Mar-Dim 6h30-13h30 et 16h-19h30</p>
+      <p style="color:#cbb489;font-size:.9rem;margin-top:.3rem">Fermé le lundi</p>
+    </div>
+    <div>
+      <p class="eyebrow" style="color:var(--gold-lite);margin-bottom:.7rem">Adresse</p>
+      <p style="font-size:.98rem;line-height:1.6;color:#ecdcc0">Rue du Faubourg Figuerolles, 34070 Montpellier</p>
+    </div>
+    <div>
+      <p class="eyebrow" style="color:var(--gold-lite);margin-bottom:.7rem">Téléphone</p>
+      <a href="tel:0467920505" class="fr" style="color:#fff;font-weight:600;font-size:1.5rem;display:block">04 67 92 05 05</a>
+      <a href="tel:0467920505" class="btn-gold" style="margin-top:.9rem;padding:.7rem 1.4rem;font-size:.88rem">Appeler la boulangerie</a>
+    </div>
+  </div>
 </section>
-<footer style="background:var(--b);padding:1.75rem 1.5rem">
-  <div style="max-width:60rem;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.73rem;color:rgba(255,255,255,.3)">
-    <div><p class="lb" style="color:#fff;font-weight:700;font-size:.88rem;margin-bottom:.1rem">Boulangerie Pâtisserie Trouche</p><p>Boulangerie artisanale &middot; Montpellier</p></div>
-    <div style="display:flex;gap:1.25rem"><a href="services.html" style="color:rgba(255,255,255,.3)">Notre carte</a><a href="contact.html" style="color:rgba(255,255,255,.3)">Commande</a><a href="mentions.html" style="color:rgba(255,255,255,.3)">Mentions légales</a></div>
+
+<!-- PLAN : carte réelle (pas un stock photo) -->
+<section style="padding:0">
+  <iframe title="Plan Boulangerie Pâtisserie Trouche" src="https://maps.google.com/maps?q=Rue du Faubourg Figuerolles, 34070 Montpellier&z=15&output=embed" style="width:100%;height:360px;border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer style="background:var(--hero3);color:#b89a6a">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.9rem;padding-top:1.8rem;padding-bottom:1.8rem;font-size:.78rem">
+    <div>
+      <p class="fr" style="color:#fff;font-weight:600;font-size:.95rem">Boulangerie Pâtisserie Trouche</p>
+      <p style="margin-top:.15rem">Boulangerie artisanale &middot; Montpellier</p>
+    </div>
+    <div style="display:flex;gap:1.4rem">
+      <a href="#carte" style="color:#b89a6a">La carte</a>
+      <a href="#venir" style="color:#b89a6a">Nous trouver</a>
+      <a href="mentions.html" style="color:#b89a6a">Mentions légales</a>
+    </div>
   </div>
 </footer>
+
 </body></html>
