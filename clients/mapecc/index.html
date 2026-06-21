@@ -1,126 +1,130 @@
 <!DOCTYPE html><html lang="fr"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mapecc — Plombier à Montpellier</title>
-<meta name="description" content="Mapecc, Plombier à Montpellier. Fuite ? Dépannage le jour même. Devis gratuit.. Tél : 06 68 56 98 95.">
+<meta name="description" content="Mapecc, plombier à Montpellier. Dépannage rapide, devis gratuit. Fuite, chauffe-eau, débouchage — intervention le jour même.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  :root{--a:#1a78c2;--b:#0b1d35}
-  body{font-family:'Barlow',sans-serif;color:#111;background:#fff;-webkit-font-smoothing:antialiased}
-  .d{font-family:'Barlow Condensed',sans-serif}
+  :root{
+    --ink:#0b2138; --paper:#eef5fc; --paper2:#dfecf9;
+    --blue:#1a78c2; --blue-lite:#74b4e8; --mute:#4c647e;
+    --hero1:#103a63; --hero2:#0b2438; --hero3:#06151f;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}
+  .ar{font-family:'Archivo',sans-serif}
   a{color:inherit;text-decoration:none}
-  @media(max-width:640px){.stats-grid{grid-template-columns:repeat(2,1fr)!important}.why-grid{grid-template-columns:1fr 1fr!important}.info-grid{grid-template-columns:1fr!important}.mob-hide{display:none!important}.hero-pad{padding:4rem 1.1rem 3rem!important}}
+  .wrap{max-width:64rem;margin:0 auto;padding-left:1.6rem;padding-right:1.6rem}
+  .eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-lite)}
+  .btn-blue{background:var(--blue);color:#fff;font-weight:800;padding:1rem 2rem;border-radius:4px;font-size:1rem;display:inline-flex;align-items:center;gap:.5rem;transition:transform .2s,background .2s}
+  .btn-blue:hover{background:#1466a8;transform:translateY(-2px)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.3);color:#dbe9f7;font-weight:600;padding:1rem 1.7rem;border-radius:4px;font-size:.95rem;display:inline-block}
+  .reveal{opacity:0;transform:translateY(16px);animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .callbar{display:none}
+  @media(max-width:680px){
+    .info-grid{grid-template-columns:1fr!important;gap:1.5rem!important}
+    .stats{grid-template-columns:1fr 1fr!important}
+    .mob-hide{display:none!important}
+    body{padding-bottom:4.2rem}
+    .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--blue);color:#fff;font-weight:800;font-size:1.05rem;align-items:center;justify-content:center;gap:.5rem;height:3.6rem;box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+  }
 </style>
 <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "Plumber",
-  "name": "Mapecc",
-  "telephone": "06 68 56 98 95",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Montpellier et alentours",
-    "addressLocality": "Montpellier",
-    "addressCountry": "FR"
-  },
-  "url": "",
-  "openingHours": "Lun-Sam 8h-19h · Urgences 24h/24"
+  "@context":"https://schema.org","@type":"Plumber","name":"Mapecc",
+  "telephone":"06 68 56 98 95",
+  "address":{"@type":"PostalAddress","streetAddress":"Montpellier et alentours","addressLocality":"Montpellier","addressCountry":"FR"},
+  "openingHours":"Lun-Sam 8h-19h","areaServed":"Montpellier"
 }</script>
 </head><body>
-<header style="background:var(--b);position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.06)">
-  <div style="max-width:64rem;margin:0 auto;padding:.65rem 1.25rem;display:flex;justify-content:space-between;align-items:center">
-    <div style="display:flex;align-items:center;gap:1.75rem">
-      <span class="d" style="color:#fff;font-weight:900;font-size:.9rem">Mapecc</span>
-      <a href="services.html" class="mob-hide" style="color:rgba(255,255,255,.72);font-size:.75rem">Prestations</a>
-      <a href="contact.html" class="mob-hide" style="color:rgba(255,255,255,.72);font-size:.75rem">Contact</a>
-    </div>
-    <a href="tel:0668569895" class="d" style="background:var(--a);color:#fff;font-weight:800;padding:.4rem .9rem;font-size:.82rem;display:flex;align-items:center;gap:.35rem"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="flex-shrink:0"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> 06 68 56 98 95</a>
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(6,21,31,.94);backdrop-filter:blur(10px)">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;padding-top:.8rem;padding-bottom:.8rem">
+    <span class="ar" style="color:#fff;font-weight:900;font-size:1rem;letter-spacing:-.01em">Mapecc</span>
+    <a href="tel:0668569895" class="btn-blue" style="padding:.5rem 1rem;font-size:.85rem">06 68 56 98 95</a>
   </div>
 </header>
-<section style="position:relative;min-height:72vh;display:flex;align-items:center;background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80&auto=format&fit=crop') center/cover no-repeat">
-  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,26,.88) 0%,rgba(4,12,26,.7) 60%,rgba(4,12,26,.55) 100%)"></div>
-  <div class="hero-pad" style="position:relative;z-index:1;padding:4rem 1.25rem 3.5rem;max-width:64rem;margin:0 auto;width:100%">
-    <p class="d" style="color:#5aa9ec;font-size:.78rem;font-weight:800;margin-bottom:1.1rem">Montpellier &middot; Plombier</p>
-    <h1 class="d" style="color:#fff;font-weight:900;font-size:clamp(2rem,6vw,3.8rem);line-height:1.04;margin-bottom:1rem;text-shadow:0 2px 12px rgba(0,0,0,.4)">Mapecc</h1>
-    <p style="color:rgba(255,255,255,.9);font-size:1.05rem;margin-bottom:2rem;max-width:34rem">Fuite ? Dépannage le jour même. Devis gratuit.</p>
-    <a href="tel:0668569895" class="d" style="color:#fff;font-weight:900;font-size:clamp(2.4rem,8vw,4.5rem);line-height:1;display:block;margin-bottom:.3rem;text-shadow:0 2px 12px rgba(0,0,0,.4)">06 68 56 98 95</a>
-    <p style="color:rgba(255,255,255,.7);font-size:.8rem;margin-bottom:2.2rem">Lun-Sam 8h-19h &middot; Urgences 24h/24</p>
-    <div style="display:flex;gap:.6rem;flex-wrap:wrap">
-      <a href="tel:0668569895" class="d" style="background:var(--a);color:#fff;font-weight:800;padding:.85rem 1.75rem;font-size:1rem;display:flex;align-items:center;gap:.45rem"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="flex-shrink:0"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> Appeler maintenant</a>
-      <a href="contact.html" class="d" style="border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.85);font-weight:700;padding:.85rem 1.75rem;font-size:.95rem">Devis gratuit</a>
+
+<section style="position:relative;background:radial-gradient(130% 130% at 12% 0%,var(--hero1) 0%,var(--hero2) 55%,var(--hero3) 100%);overflow:hidden">
+  <div class="wrap" style="position:relative;padding-top:4.5rem;padding-bottom:4.5rem">
+    <p class="eyebrow reveal" style="margin-bottom:1.2rem;animation-delay:.05s">Plombier à Montpellier &middot; Dépannage rapide</p>
+    <h1 class="ar reveal" style="color:#fff;font-weight:900;font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.02;letter-spacing:-.025em;margin-bottom:.9rem;animation-delay:.1s">Mapecc</h1>
+    <p class="reveal" style="color:#cfe1f3;font-size:clamp(1.05rem,2.4vw,1.35rem);max-width:32rem;margin-bottom:2.2rem;animation-delay:.16s">Fuite, chauffe-eau, débouchage. Intervention le jour même, devis gratuit.</p>
+
+    <p class="eyebrow reveal" style="margin-bottom:.3rem;animation-delay:.22s">Appelez maintenant</p>
+    <a href="tel:0668569895" class="ar reveal" style="color:#fff;font-weight:900;font-size:clamp(2.6rem,9vw,5.2rem);line-height:1;letter-spacing:-.02em;display:block;margin-bottom:.6rem;animation-delay:.26s">06 68 56 98 95</a>
+
+    <div class="reveal" style="display:inline-flex;align-items:center;gap:.6rem;background:rgba(116,180,232,.12);border:1px solid rgba(116,180,232,.35);padding:.55rem 1.05rem;border-radius:999px;margin-bottom:2.2rem;animation-delay:.3s">
+      <span style="width:7px;height:7px;border-radius:50%;background:#5fd06b;box-shadow:0 0 0 4px rgba(95,208,107,.18)"></span>
+      <span style="color:#dbe9f7;font-size:.88rem;font-weight:500">Disponible maintenant &middot; Montpellier et alentours</span>
+    </div>
+
+    <div class="reveal" style="display:flex;gap:.8rem;flex-wrap:wrap;animation-delay:.34s">
+      <a href="tel:0668569895" class="btn-blue"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> Appeler maintenant</a>
+      <a href="#zone" class="btn-ghost">Zone & horaires</a>
     </div>
   </div>
 </section>
-<div class="stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);border-bottom:3px solid var(--b)">
-  <div style="padding:1.4rem 1.5rem;border-right:1px solid #f0f0f0"><p class="d" style="font-size:2rem;font-weight:900;color:var(--a)">30 min</p><p style="font-size:.78rem;color:#999;margin-top:.2rem">Délai d'intervention</p></div>
-  <div style="padding:1.4rem 1.5rem;border-right:1px solid #f0f0f0"><p class="d" style="font-size:2rem;font-weight:900;color:#111">+10 ans</p><p style="font-size:.78rem;color:#999;margin-top:.2rem">D'expérience</p></div>
-  <div style="padding:1.4rem 1.5rem;border-right:1px solid #f0f0f0"><p class="d" style="font-size:2rem;font-weight:900;color:#111">24h/7j</p><p style="font-size:.78rem;color:#999;margin-top:.2rem">Disponibilité</p></div>
-  <div style="padding:1.4rem 1.5rem"><p class="d" style="font-size:2rem;font-weight:900;color:#111">100%</p><p style="font-size:.78rem;color:#999;margin-top:.2rem">Devis gratuit</p></div>
+
+<div class="stats" style="display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);color:#fff">
+  <div style="padding:1.5rem 1.5rem;border-right:1px solid rgba(255,255,255,.08)"><p class="ar" style="font-size:1.9rem;font-weight:900;color:var(--blue-lite)">30 min</p><p style="font-size:.78rem;color:#9fb6cc;margin-top:.2rem">Délai d'intervention</p></div>
+  <div style="padding:1.5rem 1.5rem;border-right:1px solid rgba(255,255,255,.08)"><p class="ar" style="font-size:1.9rem;font-weight:900">+10 ans</p><p style="font-size:.78rem;color:#9fb6cc;margin-top:.2rem">D'expérience</p></div>
+  <div style="padding:1.5rem 1.5rem;border-right:1px solid rgba(255,255,255,.08)"><p class="ar" style="font-size:1.9rem;font-weight:900">24h/7j</p><p style="font-size:.78rem;color:#9fb6cc;margin-top:.2rem">Urgences</p></div>
+  <div style="padding:1.5rem 1.5rem"><p class="ar" style="font-size:1.9rem;font-weight:900">Gratuit</p><p style="font-size:.78rem;color:#9fb6cc;margin-top:.2rem">Devis sur place</p></div>
 </div>
-<section style="padding:3.5rem 1.25rem" id="services">
-  <div style="max-width:44rem;margin:0 auto">
-    <p class="d" style="font-size:.62rem;color:#6b6b6b;font-weight:800;margin-bottom:.4rem">Nos interventions</p>
-    <h2 class="d" style="font-size:1.9rem;font-weight:900;color:#111;margin-bottom:2rem">Ce qu'on fait</h2>
-  <div style="padding:1.1rem 0;border-top:1px solid #f0f0f0">
-    <p class="d" style="font-weight:900;font-size:1.05rem;color:#111;margin-bottom:.15rem;">Fuite et dépannage</p>
-    <p style="color:#999;font-size:.875rem">Intervention le jour même, urgences incluses</p>
-  </div>
-  <div style="padding:1.1rem 0;border-top:1px solid #f0f0f0">
-    <p class="d" style="font-weight:900;font-size:1.05rem;color:#111;margin-bottom:.15rem;">Chauffe-eau</p>
-    <p style="color:#999;font-size:.875rem">Installation, remplacement, mise en service</p>
-  </div>
-  <div style="padding:1.1rem 0;border-top:1px solid #f0f0f0">
-    <p class="d" style="font-weight:900;font-size:1.05rem;color:#111;margin-bottom:.15rem;">Débouchage</p>
-    <p style="color:#999;font-size:.875rem">Canalisations, WC, évier</p>
-  </div>
-  <div style="padding:1.1rem 0;border-top:1px solid #f0f0f0">
-    <p class="d" style="font-weight:900;font-size:1.05rem;color:#111;margin-bottom:.15rem;">Salle de bain</p>
-    <p style="color:#999;font-size:.875rem">Rénovation complète, pose, carrelage</p>
-  </div>
-  <div style="padding:1.1rem 0;border-top:1px solid #f0f0f0">
-    <p class="d" style="font-weight:900;font-size:1.05rem;color:#111;margin-bottom:.15rem;">Chauffage</p>
-    <p style="color:#999;font-size:.875rem">Chaudière, radiateurs, plancher chauffant</p>
-  </div>
-    <a href="services.html" class="d" style="display:inline-block;margin-top:1.5rem;color:var(--a);font-weight:800;font-size:.85rem;border-bottom:1px solid var(--a);padding-bottom:.1rem">Voir toutes nos prestations</a>
-  </div>
-</section>
-<section style="padding:3rem 1.25rem;background:#f7f7f7">
-  <div style="max-width:64rem;margin:0 auto">
-    <p class="d" style="font-size:.62rem;color:#6b6b6b;font-weight:800;margin-bottom:2rem">Pourquoi nous choisir</p>
-    <div class="why-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
-      <div><p class="d" style="font-size:2.2rem;font-weight:900;color:var(--a);line-height:1;margin-bottom:.5rem">01</p><p class="d" style="font-weight:800;font-size:.95rem;color:#111;margin-bottom:.3rem">Disponible 24h/7j</p><p style="color:#888;font-size:.82rem;line-height:1.55">Urgences, week-ends et jours fériés couverts.</p></div>
-      <div><p class="d" style="font-size:2.2rem;font-weight:900;color:var(--a);line-height:1;margin-bottom:.5rem">02</p><p class="d" style="font-weight:800;font-size:.95rem;color:#111;margin-bottom:.3rem">Devis transparent</p><p style="color:#888;font-size:.82rem;line-height:1.55">Tarifs affichés, aucune surprise sur la facture.</p></div>
-      <div><p class="d" style="font-size:2.2rem;font-weight:900;color:var(--a);line-height:1;margin-bottom:.5rem">03</p><p class="d" style="font-weight:800;font-size:.95rem;color:#111;margin-bottom:.3rem">Artisans certifiés</p><p style="color:#888;font-size:.82rem;line-height:1.55">Diplômés, assurés, 10 ans min. d'expérience.</p></div>
-      <div><p class="d" style="font-size:2.2rem;font-weight:900;color:var(--a);line-height:1;margin-bottom:.5rem">04</p><p class="d" style="font-weight:800;font-size:.95rem;color:#111;margin-bottom:.3rem">Travail garanti</p><p style="color:#888;font-size:.82rem;line-height:1.55">Garantie décennale sur toutes nos interventions.</p></div>
+
+<section style="padding-top:5rem;padding-bottom:4.5rem">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--mute);margin-bottom:.8rem">Nos interventions</p>
+    <h2 class="ar" style="font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.02em;max-width:20ch;margin-bottom:3rem;line-height:1.05">Une panne d'eau ? On règle ça vite et bien.</h2>
+    <div class="info-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.2rem 3rem">
+      <div><p class="ar" style="font-size:1.2rem;font-weight:800;margin-bottom:.35rem">Fuite & dépannage</p><p style="color:var(--mute);font-size:.95rem;line-height:1.6">Recherche de fuite, réparation, intervention le jour même.</p></div>
+      <div><p class="ar" style="font-size:1.2rem;font-weight:800;margin-bottom:.35rem">Chauffe-eau</p><p style="color:var(--mute);font-size:.95rem;line-height:1.6">Installation, remplacement, mise en service toutes marques.</p></div>
+      <div><p class="ar" style="font-size:1.2rem;font-weight:800;margin-bottom:.35rem">Débouchage</p><p style="color:var(--mute);font-size:.95rem;line-height:1.6">Canalisations, WC, évier — matériel haute pression.</p></div>
+      <div><p class="ar" style="font-size:1.2rem;font-weight:800;margin-bottom:.35rem">Salle de bain</p><p style="color:var(--mute);font-size:.95rem;line-height:1.6">Rénovation, pose sanitaire, robinetterie, raccordements.</p></div>
     </div>
   </div>
 </section>
-<section style="padding:2.5rem 1.25rem;border-top:1px solid #f0f0f0">
-  <div style="max-width:44rem;margin:0 auto">
-    <blockquote style="border-left:3px solid var(--a);padding-left:1.25rem">
-      <p class="d" style="font-size:1.1rem;color:#333;line-height:1.55;font-weight:500">« Intervention rapide pour une fuite sous l'évier. Devis respecté, travail très soigné. Je recommande sans hésiter. »</p>
-      <p style="color:#6b6b6b;font-size:.78rem;margin-top:.65rem">Marie T. &middot; Montpellier &middot; Avis Google vérifié ★★★★★</p>
-    </blockquote>
+
+<section style="background:var(--paper2);padding-top:4.5rem;padding-bottom:4.5rem">
+  <div class="wrap" style="max-width:42rem">
+    <blockquote class="ar" style="font-size:clamp(1.3rem,3.4vw,1.9rem);font-weight:700;line-height:1.35;letter-spacing:-.01em;margin-bottom:1.2rem">« Fuite un dimanche soir, sur place en 40 minutes. Travail propre, prix annoncé tenu. »</blockquote>
+    <p style="color:var(--mute);font-size:.9rem">Karim B. &middot; Montpellier &middot; ★★★★★ Google</p>
   </div>
 </section>
-<section style="padding:2.5rem 1.25rem;background:#f7f7f7">
-  <div class="info-grid" style="max-width:64rem;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem">
-    <div><p class="d" style="font-size:.6rem;color:#6b6b6b;font-weight:800;margin-bottom:.4rem">Adresse</p><p style="color:#555;font-size:.88rem;line-height:1.6">Montpellier et alentours</p></div>
-    <div><p class="d" style="font-size:.6rem;color:#6b6b6b;font-weight:800;margin-bottom:.4rem">Horaires</p><p style="color:#555;font-size:.88rem;line-height:1.6">Lun-Sam 8h-19h · Urgences 24h/24</p></div>
-    <div><p class="d" style="font-size:.6rem;color:#6b6b6b;font-weight:800;margin-bottom:.4rem">Téléphone</p><a href="tel:0668569895" class="d" style="color:var(--a);font-weight:900;font-size:1.4rem;display:block">06 68 56 98 95</a></div>
+
+<section id="zone" style="background:var(--ink);color:var(--paper)">
+  <div class="wrap info-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:2.5rem;padding-top:3.5rem;padding-bottom:3.5rem">
+    <div>
+      <p class="eyebrow" style="margin-bottom:.7rem">Horaires</p>
+      <p class="ar" style="font-size:1.4rem;font-weight:800;line-height:1.3">Lun-Sam 8h-19h</p>
+      <p style="color:#9fb6cc;font-size:.9rem;margin-top:.3rem">Urgences 24h/24, 7j/7</p>
+    </div>
+    <div>
+      <p class="eyebrow" style="margin-bottom:.7rem">Zone</p>
+      <p style="font-size:.98rem;line-height:1.6;color:#d4e3f2">Montpellier et alentours &middot; et alentours</p>
+    </div>
+    <div>
+      <p class="eyebrow" style="margin-bottom:.7rem">Téléphone</p>
+      <a href="tel:0668569895" class="ar" style="color:#fff;font-weight:900;font-size:1.7rem;display:block">06 68 56 98 95</a>
+      <a href="tel:0668569895" class="btn-blue" style="margin-top:.9rem;padding:.7rem 1.3rem;font-size:.88rem">Appeler maintenant</a>
+    </div>
   </div>
 </section>
-<section style="padding:0;background:#fff">
-  <iframe title="Plan Mapecc" src="https://maps.google.com/maps?q=Montpellier et alentours&z=14&output=embed" style="width:100%;height:340px;border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<section style="padding:0">
+  <iframe title="Zone Mapecc" src="https://maps.google.com/maps?q=Montpellier et alentours&z=13&output=embed" style="width:100%;height:340px;border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
-<footer style="background:#111;padding:1.75rem 1.25rem">
-  <div style="max-width:64rem;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.73rem;color:#555">
-    <div><p class="d" style="color:#fff;font-weight:800;font-size:.88rem;margin-bottom:.1rem">Mapecc</p><p>Plombier &middot; Montpellier</p></div>
-    <div style="display:flex;gap:1.25rem"><a href="services.html" style="color:#444">Prestations</a><a href="contact.html" style="color:#444">Contact</a><a href="mentions.html" style="color:#444">Mentions légales</a></div>
+
+<footer style="background:var(--hero3);color:#7e98b0">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.9rem;padding-top:1.8rem;padding-bottom:1.8rem;font-size:.78rem">
+    <div><p class="ar" style="color:#fff;font-weight:800;font-size:.95rem">Mapecc</p><p style="margin-top:.15rem">Plombier &middot; Montpellier et alentours</p></div>
+    <div style="display:flex;gap:1.4rem"><a href="#zone" style="color:#7e98b0">Zone & horaires</a><a href="mentions.html" style="color:#7e98b0">Mentions légales</a></div>
   </div>
 </footer>
-<div id="mob-cta" style="position:fixed;bottom:0;left:0;right:0;background:var(--a);padding:.75rem 1rem;display:none;z-index:100">
-  <a href="tel:0668569895" class="d" style="color:#fff;font-weight:900;font-size:1.1rem;display:flex;align-items:center;justify-content:center;gap:.5rem"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="flex-shrink:0"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg> 06 68 56 98 95</a>
-</div>
-<script>(function(){if(window.innerWidth<640){document.getElementById('mob-cta').style.display='block';document.querySelector('footer').style.paddingBottom='4rem'}})();</script>
+
+<a href="tel:0668569895" class="callbar ar">📞 Appeler &middot; 06 68 56 98 95</a>
+
 </body></html>
