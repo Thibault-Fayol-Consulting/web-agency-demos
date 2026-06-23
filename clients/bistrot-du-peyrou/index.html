@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bistrot du Peyrou - Restaurant a Montpellier</title>
+<meta name="description" content="Bistrot du Peyrou, restaurant a Montpellier. Cuisine maison, vins naturels. Reservez votre table.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--a:#c4622d;--b:#1e0d00}
+  body{font-family:'DM Sans',sans-serif;background:#fff;color:#1a1a1a}
+  .pf{font-family:'Playfair Display',serif}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:60rem;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem}
+  .callbar{display:none}
+  @media(max-width:640px){
+    .svc-grid{grid-template-columns:1fr!important}.info-grid{grid-template-columns:1fr!important}
+    .mob-hide{display:none!important}.hero-pad{padding:3.5rem 1.1rem 3rem!important}
+    body{padding-bottom:4rem}
+    .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--a);color:#fff;font-weight:700;font-size:1rem;align-items:center;justify-content:center;gap:.5rem;height:3.6rem}
+  }
+</style>
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"Restaurant","name":"Bistrot du Peyrou",
+  "telephone":"04 67 23 56 89",
+  "address":{"@type":"PostalAddress","streetAddress":"Montpellier, Peyrou","addressLocality":"Montpellier","addressCountry":"FR"},
+  "servesCuisine":"Cuisine francaise","areaServed":"Montpellier"
+}</script>
+</head><body>
+
+<header style="background:rgba(26,13,0,.95);position:sticky;top:0;z-index:50">
+  <div class="wrap" style="padding:.7rem 0;display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:center;gap:1.75rem">
+      <span class="pf" style="color:#fff;font-weight:700;font-size:.92rem">Bistrot du Peyrou</span>
+      <a href="#carte" class="mob-hide" style="color:rgba(255,255,255,.35);font-size:.75rem">La carte</a>
+      <a href="#contact" class="mob-hide" style="color:rgba(255,255,255,.35);font-size:.75rem">Reservation</a>
+    </div>
+    <a href="tel:0467235689" style="color:rgba(255,255,255,.55);font-size:.78rem">04 67 23 56 89</a>
+  </div>
+</header>
+
+<section style="position:relative;min-height:80vh;display:flex;align-items:center;background:url('https://images.unsplash.com/photo-1516788875874-c5912cae7b43?w=1400&q=80&auto=format&fit=crop') center/cover no-repeat">
+  <div style="position:absolute;inset:0;background:rgba(15,8,2,.72)"></div>
+  <div class="hero-pad wrap" style="position:relative;z-index:1;padding:5rem 0 4.5rem">
+    <p style="color:var(--a);font-size:.62rem;text-transform:uppercase;letter-spacing:.22em;font-weight:600;margin-bottom:1.25rem">Restaurant · Montpellier, Peyrou</p>
+    <h1 class="pf" style="color:#fff;font-weight:900;font-size:clamp(2.5rem,9vw,5.5rem);line-height:1;letter-spacing:-.02em;margin-bottom:1.25rem">Bistrot du Peyrou</h1>
+    <p style="color:rgba(255,255,255,.4);font-size:.95rem;max-width:30rem;margin-bottom:2rem">Cuisine maison, vins naturels</p>
+    <div style="display:inline-block;border:1px solid rgba(255,255,255,.14);padding:.85rem 1.4rem;margin-bottom:2.25rem">
+      <p style="color:rgba(255,255,255,.28);font-size:.58rem;text-transform:uppercase;letter-spacing:.18em;margin-bottom:.3rem">Horaires</p>
+      <p style="color:rgba(255,255,255,.78);font-size:.88rem;font-weight:500">Mar-Sam 12h-14h · 19h-22h</p>
+    </div>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+      <a href="#carte" class="pf" style="background:var(--a);color:#fff;font-weight:700;padding:.85rem 1.75rem;font-size:.95rem">Voir la carte</a>
+      <a href="tel:0467235689" style="border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);padding:.85rem 1.75rem;font-size:.88rem">Reserver</a>
+    </div>
+  </div>
+</section>
+
+<section id="carte" style="padding:3.5rem 0">
+  <div class="wrap">
+    <h2 class="pf" style="font-size:2rem;font-weight:900;color:#111;margin-bottom:2.5rem">Ce qu'on sert</h2>
+    <div class="svc-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem">
+      <div style="padding:1rem 0;border-top:1px solid #eee"><p class="pf" style="font-weight:700;font-size:.95rem;color:#111;margin-bottom:.2rem">Dejeuner</p><p style="color:#aaa;font-size:.82rem">Formule midi, plat du jour</p></div>
+      <div style="padding:1rem 0;border-top:1px solid #eee"><p class="pf" style="font-weight:700;font-size:.95rem;color:#111;margin-bottom:.2rem">Diner</p><p style="color:#aaa;font-size:.82rem">Carte complete du mardi au samedi soir</p></div>
+      <div style="padding:1rem 0;border-top:1px solid #eee"><p class="pf" style="font-weight:700;font-size:.95rem;color:#111;margin-bottom:.2rem">Cuisine maison</p><p style="color:#aaa;font-size:.82rem">Produits frais, fait sur place</p></div>
+      <div style="padding:1rem 0;border-top:1px solid #eee"><p class="pf" style="font-weight:700;font-size:.95rem;color:#111;margin-bottom:.2rem">Terrasse</p><p style="color:#aaa;font-size:.82rem">Ouverte en saison</p></div>
+      <div style="padding:1rem 0;border-top:1px solid #eee"><p class="pf" style="font-weight:700;font-size:.95rem;color:#111;margin-bottom:.2rem">Privatisation</p><p style="color:#aaa;font-size:.82rem">Groupes et evenements sur reservation</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:2rem 0;background:#f7f7f5">
+  <div class="wrap" style="max-width:40rem">
+    <blockquote style="border-left:3px solid var(--a);padding-left:1.25rem">
+      <p class="pf" style="font-size:1.05rem;font-style:italic;color:#333;line-height:1.6">&#171; Cuisine sincere, service aux petits soins. Le meilleur rapport qualite-plaisir de Montpellier. &#187;</p>
+      <p style="color:#bbb;font-size:.78rem;margin-top:.55rem">Thomas G. · Montpellier · &#9733;&#9733;&#9733;&#9733;&#9733; Google</p>
+    </blockquote>
+  </div>
+</section>
+
+<section id="contact" style="padding:2.5rem 0;background:#f7f7f5">
+  <div class="info-grid wrap" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem">
+    <div><p style="color:#ccc;font-size:.6rem;text-transform:uppercase;margin-bottom:.5rem">Adresse</p><p style="color:#666;font-size:.875rem">Montpellier, Peyrou</p></div>
+    <div><p style="color:#ccc;font-size:.6rem;text-transform:uppercase;margin-bottom:.5rem">Horaires</p><p style="color:#666;font-size:.875rem">Mar-Sam 12h-14h · 19h-22h</p></div>
+    <div><p style="color:#ccc;font-size:.6rem;text-transform:uppercase;margin-bottom:.5rem">Contact</p><a href="tel:0467235689" class="pf" style="color:var(--a);font-weight:700;font-size:1.3rem;display:block">04 67 23 56 89</a></div>
+  </div>
+</section>
+
+<footer style="background:#111;padding:1.75rem 0">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.73rem;color:#555">
+    <div><p class="pf" style="color:#fff;font-weight:700">Bistrot du Peyrou</p><p>Restaurant · Montpellier, Peyrou</p></div>
+    <div style="display:flex;gap:1.25rem"><a href="#carte" style="color:#444">La carte</a><a href="#contact" style="color:#444">Reservation</a><a href="mentions.html" style="color:#444">Mentions legales</a></div>
+  </div>
+</footer>
+
+<a href="tel:0467235689" class="callbar pf" aria-label="Reserver ou appeler">04 67 23 56 89</a>
+
+</body></html>
